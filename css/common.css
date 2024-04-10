@@ -4,11 +4,220 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+/* task 1 */
+#categories {
+  margin-inline: auto;
+  padding: 24px;
+  width: 100%;
+  max-width: 440px;
+  /* border: 1px solid black; */
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.item {
+  padding: 16px;
+  background: #f6f6fe;
+  border-radius: 8px;
+}
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item > h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.item > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.item > ul > li {
+  padding: 8px 16px 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+}
+
+.item > ul > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* task 2 */
+
+/* task 3 */
+#name-input {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px 16px 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 0.5px solid #808080;
+  border-radius: 4px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* task 4 */
+
+.login-form {
+  margin-inline: auto;
+  padding: 24px;
+  width: 100%;
+  max-width: 408px;
+}
+
+.login-form > label {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.login-form > label:last-of-type{
+ margin-bottom: 16px;
+ 
+}
+
+.login-form > label > input {
+  padding: 10px 16px 10px 16px;
+  border: 0.5px solid #2e2f42;
+  border-radius: 4px;
+  
+}
+
+.login-form > label > input:hover,
+.login-form > label > input:focus {
+  outline: 1px solid black;
+  
+  
+}
+
+.login-form > button {
+  padding: 8px 16px 8px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.login-form > button:hover,
+.login-form > button:focus {
+  background-color: #6c8cff;
+}
+
+
+/* task 5*/
+.widget {
+  margin-inline: auto;
+  padding: 100px 88px 100px 88px;
+  width: 100%;
+  max-width:345px;
+  background-color: #fff;
+  border-radius: 8px;
+
+}
+
+.widget > p {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+
+}
+.change-color {
+  border-radius: 8px;
+padding: 8px 16px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+border-radius: 8px;
+background: #4e75ff;
+border: none;
+
+}
+
+/* task 6 */
+
+#controls {
+  margin-inline: auto;
+  padding: 32px;
+  display: flex;
+  gap:16px;
+  width:100%;
+  max-width: 486px;
+  background: #f6f6fe;
+ 
+}
+
+#controls input {
+  border: 1px solid #808080;
+border-radius: 8px;
+padding: 8px 8px;
+text-align: center;
+
+width: 150px;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+
+}
+
+#controls button {
+  border-radius: 8px;
+padding: 8px 16px;
+width: 120px;
+/* height: 40px; */
+
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
 }
